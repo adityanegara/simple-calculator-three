@@ -15,9 +15,10 @@ addButton.addEventListener('click', ()=>{
     }
 });
 
-function validation(numOne, numTwo){
+const validation = (numOne, numTwo) =>{
     if((numOne == false) || (numTwo == false) || (isNaN(numOne)) || (isNaN(numTwo))){
         return false;
     }
     return true;
 }
+

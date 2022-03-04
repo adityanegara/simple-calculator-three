@@ -7,6 +7,17 @@ addButton.addEventListener('click', ()=>{
     //mengambil nilai dari input
     const inputOneValue = parseInt(inputOne.value);
     const inputTwoValue = parseInt(inputTwo.value);
-    const addedResults = inputOneValue + inputTwoValue;
-    result.innerHTML = addedResults;
+    if(validation(inputOneValue, inputTwoValue)){
+        const addedResults = inputOneValue + inputTwoValue;
+        result.innerHTML = addedResults;
+    }else{
+        alert("Input Not Valid");
+    }
 });
+
+function validation(numOne, numTwo){
+    if((numOne == false) || (numTwo == false) || (isNaN(numOne)) || (isNaN(numTwo))){
+        return false;
+    }
+    return true;
+}

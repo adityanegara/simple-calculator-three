@@ -11,7 +11,7 @@ addButton.addEventListener('click', ()=>{
         const addedResults = inputOneValue + inputTwoValue;
         result.innerHTML = addedResults;
     }else{
-        alert('input not valuid')
+        alert("Input Not Valid");
     }
 });
 
@@ -21,3 +21,4 @@ const validation = (numOne, numTwo) =>{
     }
     return true;
 }
+
